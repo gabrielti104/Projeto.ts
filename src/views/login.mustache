@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro da Liga dos Programadores</h1>
+    <br>
+    <form action="bancodedados.php">
+        <p>
+        Nome:
+        <input type="nome" name="q" placeholder="insira seu nome" required>
+        </p>
+        E-mail:
+        <input type="email" name="q" placeholder="insira seu e-mail" required>  Password <input type="password" name="q" placeholder="insira a senha" required>
+        <p>
+        Data de nascimento:
+        <input type="date" name="q" placeholder="insira a data" required> - Foto: <input type="file" name="q" placeholder="Anexar Arquivo"required>
+        </p>
+        Nacionalidade:
+        <select id="Pais" name="Pais">
+            <option value="Brasil">Brasil</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Japão">Japão</option>
+            </select>
+            -Genero:
+            <input type="radio" id="sexo-m" name="sexo" value="Masculino">
+            <label for="sexo-m">M</label>
+            <input type="radio" id="sexo-f" name="sexo" value="Feminino">
+            <label for="sexo-f">F</label>
+        <p>Linguagens que você domina:</p>
+        <input type="checkbox"> JavaScript - 
+            <input type="checkbox"> Python -
+            <input type="checkbox"> C -
+            <input type="checkbox"> Java
+        </p>
+        <p><textarea name="message" rows="10" cols="30"></textarea></p>
+        <button>Criar</button>
+    </form>
+</body>
+</html>
